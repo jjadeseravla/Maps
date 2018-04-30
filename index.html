@@ -24,17 +24,22 @@
         .group4:hover {
           fill: grey;
         }
+        .group5:hover {
+          fill: grey;
+          /* position: absolute; */
+        }
 
-        #myDIV {
+        .textBox {
           position: fixed;
           top: 54%;
           left: 50%;
-          width: 20em;
+          width: 21em;
           height: 17em;
           margin-top: -15em;
           margin-left: -10em;
           border: 1px solid #000000;
           background-color: #ffffff;
+          overflow:auto;
         }
 
         .on {
@@ -43,9 +48,9 @@
           stroke-width: 1;
         }
 
-        .finish {
+        /* .finish {
           position: absolute; top:0; right:0;
-        }
+        } */
 
         body {
           padding: 20px;
@@ -60,21 +65,35 @@
       <rect x="350" y="50" width="300" height="150" stroke="#000000" onclick="myFunction()"/>
     </g>
     <g class="group3">
-      <rect x="250" y="5-" width="100" height="250" stroke="#000000" onclick="myFunction()"/>
+      <rect x="250" y="5-" width="100" height="250" stroke="#000000"/>
     </g>
     <g class="group4">
-      <rect x="250" y="5-" width="100" height="250" stroke="#000000" onclick="myFunction()"/>
+      <rect x="250" y="5-" width="100" height="250" stroke="#000000"/>
+    </g>
+    <g class="group5">
+      <!-- <circle cx="50" cy="50" r="50" fill="orange" /> -->
+      <rect x="360" y="50" rx="10" ry="10" width="60" height="60" stroke="orange" onclick="redZone()"/>
     </g>
 
     <!-- <animate xlink:href="#box1" attributeName="fill" from="#538B93" to="#0F5156" dur="1s" repeatCount="indefinite" />  -->
     </svg>
 
-    <div id="myDIV" style="display:none;">
+    <div id="myDIV" class="textBox" style="display:none;">
       <img src="sophie.jpg" style="margin:auto; width:200px;display:block" />
       <h3>Welcome to the Earth Hall!</h3>
-      <p>Meet our incredible dinosaur specimen, the most <br>intact Stegosaurus fossil skeleton ever found.<br>
-      Sophie is three metres tall and almost six metres long, <br>but wasn't even fully grown when they died.</p>
+      <p>Meet our incredible dinosaur specimen, the most intact Stegosaurus fossil skeleton ever found.</p>
+      <p>Sophie is three metres tall and almost six metres long, but wasn't even fully grown when they died.</p>
+      <p>Here you can explore gems and minerals.  See if you find a piece of moon rock!</p>
+      <p>The escalator takes you through a giant metallic globe to the upper Red Zone galleries.</p>
       <!-- <input class="finish" type="button" value="X" onclick="exit()"> -->
+    </div>
+
+    <div id="red" class="textBox" style="display:none;">
+      <img src="redZone.jpg" style="margin:auto; width:200px;display:block" />
+      <h3>Lasting Impressions, Red Zone</h3>
+      <p>Examine remarkable fossil evidence of long-ago events in the Last Impressions gallery.</p>
+      <p>From 200-million-year-old wave ripples on beach sand to a petrified tree stump, dinosaur footprints
+        and a giant ammonite.  The past is imprinted on all these gallery speicimens.</p>
     </div>
 
 
@@ -113,6 +132,15 @@
             x.style.display = "block";
         }
         // $(#myDIV).css('display', 'none');
+    }
+
+    function redZone() {
+        var x = document.getElementById("red");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
     }
 
     // function exit() {
