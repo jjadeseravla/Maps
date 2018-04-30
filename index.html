@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="./svg-pan-zoom.js"></script>
+      <!-- <script src="scripts/snap.svg-min.js"></script> -->
+      <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <svg class="us" height="500" width="900" viewBox="0, 0, 600, 200" style="border: solid 1px blue;">
+      <style>
+        .group:hover {
+          fill: grey;
+        }
+        .group2:hover {
+          fill: grey;
+        }
+        .group3:hover {
+          fill: grey;
+        }
+        .group4:hover {
+          fill: grey;
+        }
+
+        #myDIV {
+          position: fixed;
+          top: 54%;
+          left: 50%;
+          width: 20em;
+          height: 17em;
+          margin-top: -15em;
+          margin-left: -10em;
+          border: 1px solid #000000;
+          background-color: #ffffff;
+        }
+
+        .on {
+          fill: grey;
+          stroke: red;
+          stroke-width: 1;
+        }
+
+        .finish {
+          position: absolute; top:0; right:0;
+        }
+
+        body {
+          padding: 20px;
+        }
+      </style>
+
+
+      <g class="group">
+      <rect id="box1" x="50" y="50" width="200" height="100" stroke="#000000" onclick="alert('click!')"/>
+    </g>
+    <g class="group2">
+      <rect x="350" y="50" width="300" height="150" stroke="#000000" onclick="myFunction()"/>
+    </g>
+    <g class="group3">
+      <rect x="250" y="5-" width="100" height="250" stroke="#000000" onclick="myFunction()"/>
+    </g>
+    <g class="group4">
+      <rect x="250" y="5-" width="100" height="250" stroke="#000000" onclick="myFunction()"/>
+    </g>
+
+    <!-- <animate xlink:href="#box1" attributeName="fill" from="#538B93" to="#0F5156" dur="1s" repeatCount="indefinite" />  -->
+    </svg>
+
+    <div id="myDIV" style="display:none;">
+      <img src="sophie.jpg" style="margin:auto; width:200px;display:block" />
+      <h3>Welcome to the Earth Hall!</h3>
+      <p>Meet our incredible dinosaur specimen, the most <br>intact Stegosaurus fossil skeleton ever found.<br>
+      Sophie is three metres tall and almost six metres long, <br>but wasn't even fully grown when they died.</p>
+      <!-- <input class="finish" type="button" value="X" onclick="exit()"> -->
+    </div>
+
+
+    <script type="text/javascript">
+    var svgimage = svgPanZoom('.us');
+
+    svgPanZoom('#us', {
+        viewportSelector: '.svg-pan-zoom_viewport'
+      , panEnabled: true
+      , controlIconsEnabled: false
+      , zoomEnabled: true
+      , dblClickZoomEnabled: true
+      , mouseWheelZoomEnabled: true
+      , preventMouseEventsDefault: true
+      , zoomScaleSensitivity: 0.2
+      , minZoom: 0.5
+      , maxZoom: 10
+      , fit: true
+      , contain: false
+      , center: true
+      , refreshRate: 'auto'
+      , beforeZoom: function(){}
+      , onZoom: function(){}
+      , beforePan: function(){}
+      , onPan: function(){}
+      , onUpdatedCTM: function(){}
+      , customEventsHandler: {}
+      , eventsListenerElement: null
+      });
+
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        // $(#myDIV).css('display', 'none');
+    }
+
+    // function exit() {
+    //   $(.finish).css('display', 'none');
+    // }
+
+    var allStates = $("svg.us > *");
+
+      allStates.on("click", function() {
+
+        allStates.removeClass("on");
+        $(this).addClass("on");
+
+      });
+
+
+
+// $( ".group" ).show();
+    </script>
+  </body>
+</html>
