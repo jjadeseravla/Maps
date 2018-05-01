@@ -10,6 +10,19 @@
 
   </head>
   <body>
+
+    <div class="searchbar">
+      <input id="myInput" type="text" placeholder="What are you looking for?">
+      <button onclick="validateUserInput()">Search</button>
+    </div>
+    <p id="searchWord"></p>
+
+    <div class="controls">
+      <button id="zoom-in">+</button>
+      <button id="zoom-out">-</button>
+      <button id="reset">Reset</button>
+    </div>
+
     <svg class="us" height="830" width="1450" viewBox="0, 0, 600, 200" style="border: solid 1px blue;">
       <style>
         .group:hover {
@@ -47,10 +60,6 @@
           stroke: red;
           stroke-width: 1;
         }
-
-        /* .finish {
-          position: absolute; top:0; right:0;
-        } */
 
         .close {
           position: absolute;
@@ -127,39 +136,53 @@ Where can I get some?
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
     </div>
 
-    <div class="searchbar">
-      <input id="myInput" type="text">
-      <button onclick="validateUserInput()">Search</button>
-    </div>
-    <p id="searchWord"></p>
 
 
     <script type="text/javascript">
-    var svgimage = svgPanZoom('.us');
+    // var svgimage = svgPanZoom('.us');
+    //
+    // svgPanZoom('#us', {
+    //     viewportSelector: '.svg-pan-zoom_viewport'
+    //   , panEnabled: true
+    //   , controlIconsEnabled: false
+    //   , zoomEnabled: true
+    //   , dblClickZoomEnabled: true
+    //   , mouseWheelZoomEnabled: true
+    //   , preventMouseEventsDefault: true
+    //   , zoomScaleSensitivity: 0.2
+    //   , minZoom: 0.5
+    //   , maxZoom: 10
+    //   , fit: true
+    //   , contain: false
+    //   , center: true
+    //   , refreshRate: 'auto'
+    //   , beforeZoom: function(){}
+    //   , onZoom: function(){}
+    //   , beforePan: function(){}
+    //   , onPan: function(){}
+    //   , onUpdatedCTM: function(){}
+    //   , customEventsHandler: {}
+    //   , eventsListenerElement: null
+    //   });
 
-    svgPanZoom('#us', {
-        viewportSelector: '.svg-pan-zoom_viewport'
-      , panEnabled: true
-      , controlIconsEnabled: false
-      , zoomEnabled: true
-      , dblClickZoomEnabled: true
-      , mouseWheelZoomEnabled: true
-      , preventMouseEventsDefault: true
-      , zoomScaleSensitivity: 0.2
-      , minZoom: 0.5
-      , maxZoom: 10
-      , fit: true
-      , contain: false
-      , center: true
-      , refreshRate: 'auto'
-      , beforeZoom: function(){}
-      , onZoom: function(){}
-      , beforePan: function(){}
-      , onPan: function(){}
-      , onUpdatedCTM: function(){}
-      , customEventsHandler: {}
-      , eventsListenerElement: null
-      });
+
+        var panZoom = svgPanZoom('.us', {
+          zoomEnabled: true,
+          controlIconsEnabled: false
+        });
+        document.getElementById('zoom-in').addEventListener('click', function(ev){
+          ev.preventDefault()
+          panZoom.zoomIn()
+        });
+        document.getElementById('zoom-out').addEventListener('click', function(ev){
+          ev.preventDefault()
+          panZoom.zoomOut()
+        });
+        document.getElementById('reset').addEventListener('click', function(ev){
+          ev.preventDefault()
+          panZoom.resetZoom()
+        });
+
 
     function myFunction() {
         var x = document.getElementById("myDIV");
@@ -219,8 +242,6 @@ There are many variations of passages of Lorem Ipsum available, but the majority
           $( "h3" ).fadeOut(3000);
         }
 
-
-// $( ".group" ).show();
     </script>
   </body>
 
