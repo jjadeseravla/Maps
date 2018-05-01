@@ -7,6 +7,10 @@
     <script src="./svg-pan-zoom.js"></script>
       <!-- <script src="scripts/snap.svg-min.js"></script> -->
       <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="main.js">
+
+      </script>
 
   </head>
   <body>
@@ -34,9 +38,9 @@
         .group3:hover {
           fill: grey;
         }
-        .group4:hover {
+        /* .group4:hover {
           fill: grey;
-        }
+        } */
         .group5:hover {
           fill: grey;
           /* position: absolute; */
@@ -78,6 +82,43 @@
           height: 830px;
           overflow:auto;
         }
+
+        /* html,body{
+      width: 100%;
+      height: 100%;
+    }
+    #mainViewContainer {
+      width: 95%;
+      height: 95%;
+      border: 1px solid black;
+      margin: 10px;
+      padding: 3px;
+      overflow: hidden;
+    }
+    #mainView {
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      display: inline;
+    }
+    .thumbViewClass {
+      border: 1px solid black;
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      width: 20%;
+      height: 30%;
+      margin: 3px;
+      padding: 3px;
+      overflow: hidden;
+    }
+    #thumbView {
+      z-index: 110;
+      background: white;
+    }
+    #scopeContainer {
+      z-index: 120;
+    } */
       </style>
 
 
@@ -90,9 +131,9 @@
     <g class="group3">
       <rect x="250" y="0" width="100" height="250" stroke="#000000"/>
     </g>
-    <g class="group4">
-      <rect x="250" y="5-" width="100" height="250" stroke="#000000"/>
-    </g>
+    <!-- <g class="group4">
+      <rect x="250" y="-5" width="100" height="250" stroke="#000000"/>
+    </g> -->
     <g class="group5">
       <!-- <circle cx="50" cy="50" r="50" fill="orange" /> -->
       <rect x="360" y="30" rx="10" ry="10" width="60" height="60" stroke="orange" onclick="redZone()"/>
@@ -100,6 +141,25 @@
 
     <!-- <animate xlink:href="#box1" attributeName="fill" from="#538B93" to="#0F5156" dur="1s" repeatCount="indefinite" />  -->
     </svg>
+<!--
+    <div id="thumbViewContainer">
+      <svg id="scopeContainer" class="thumbViewClass">
+        <g>
+          <rect id="scope" fill="red" fill-opacity="0.1" stroke="red" stroke-width="2px" x="0" y="0" width="0" height="0"/>
+          <line id="line1" stroke="red" stroke-width="2px" x1="0" y1="0" x2="0" y2="0"/>
+          <line id="line2" stroke="red" stroke-width="2px" x1="0" y1="0" x2="0" y2="0"/>
+        </g>
+      </svg>
+      <embed id="thumbView" type="image/svg+xml" src="tiger.svg" class="thumbViewClass"/>
+    </div>
+
+    <script src="svg-pan-zoom.js" type="text/javascript" ></script>
+    <script src="thumbnailViewer.js" type="text/javascript" ></script>
+
+    <script type="text/javascript">
+      thumbnailViewer({mainViewId: 'mainView',thumbViewId: 'thumbView'});
+    </script>
+  </body> -->
 
     <div id="myDIV" class="textBox" style="display:none;">
       <img src="sophie.jpg" style="margin:auto; width:200px;display:block" />
@@ -136,111 +196,24 @@ Where can I get some?
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
     </div>
 
+    <script>
 
-
-    <script type="text/javascript">
-    // var svgimage = svgPanZoom('.us');
-    //
-    // svgPanZoom('#us', {
-    //     viewportSelector: '.svg-pan-zoom_viewport'
-    //   , panEnabled: true
-    //   , controlIconsEnabled: false
-    //   , zoomEnabled: true
-    //   , dblClickZoomEnabled: true
-    //   , mouseWheelZoomEnabled: true
-    //   , preventMouseEventsDefault: true
-    //   , zoomScaleSensitivity: 0.2
-    //   , minZoom: 0.5
-    //   , maxZoom: 10
-    //   , fit: true
-    //   , contain: false
-    //   , center: true
-    //   , refreshRate: 'auto'
-    //   , beforeZoom: function(){}
-    //   , onZoom: function(){}
-    //   , beforePan: function(){}
-    //   , onPan: function(){}
-    //   , onUpdatedCTM: function(){}
-    //   , customEventsHandler: {}
-    //   , eventsListenerElement: null
-    //   });
-
-
-        var panZoom = svgPanZoom('.us', {
-          zoomEnabled: true,
-          controlIconsEnabled: false
-        });
-        document.getElementById('zoom-in').addEventListener('click', function(ev){
-          ev.preventDefault()
-          panZoom.zoomIn()
-        });
-        document.getElementById('zoom-out').addEventListener('click', function(ev){
-          ev.preventDefault()
-          panZoom.zoomOut()
-        });
-        document.getElementById('reset').addEventListener('click', function(ev){
-          ev.preventDefault()
-          panZoom.resetZoom()
-        });
-
-
-    function myFunction() {
-        var x = document.getElementById("myDIV");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-
-    function redZone() {
-        var x = document.getElementById("red");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-
-    function exit() {
-    	document.getElementById("closeBox").style.display="none";
-    	document.getElementById("closeBox").style.display="block";
-    }
-
-    // function exit() {
-    //   $(.finish).css('display', 'none');
-    // }
-
-    var allStates = $("svg.us > *");
-
-      allStates.on("click", function() {
-
-        allStates.removeClass("on");
-        $(this).addClass("on");
-
+    var panZoom = svgPanZoom('.us', {
+        zoomEnabled: true,
+        controlIconsEnabled: false
       });
-
-      function validateUserInput() {
-        var popup;
-        var zone = document.getElementById("myInput").value;
-
-        switch(zone) {
-            case "darwin centre".toLowerCase():
-            popup = myFunction();
-            break;
-            case "earth hall":
-            popup = redZone();
-            break;
-            default:
-           popup = document.getElementById("searchWord").innerHTML = "<h3>Apologies, your input is not recognised, please try again</h3>";
-           clear();
-        }
-        document.getElementById("searchWord").style.display = popup;
-      }
-
-        function clear() {
-          $( "h3" ).fadeOut(3000);
-        }
+      document.getElementById('zoom-in').addEventListener('click', function(ev){
+        ev.preventDefault()
+        panZoom.zoomIn()
+      });
+      document.getElementById('zoom-out').addEventListener('click', function(ev){
+        ev.preventDefault()
+        panZoom.zoomOut()
+      });
+      document.getElementById('reset').addEventListener('click', function(ev){
+        ev.preventDefault()
+        panZoom.resetZoom()
+      });
 
     </script>
   </body>
