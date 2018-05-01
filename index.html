@@ -131,7 +131,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
       <input id="myInput" type="text">
       <button onclick="validateUserInput()">Search</button>
     </div>
-    <p id="demo"></p>
+    <p id="searchWord"></p>
 
 
     <script type="text/javascript">
@@ -198,24 +198,26 @@ There are many variations of passages of Lorem Ipsum available, but the majority
       });
 
       function validateUserInput() {
-        var text;
-        var fruits = document.getElementById("myInput").value;
+        var popup;
+        var zone = document.getElementById("myInput").value;
 
-        switch(fruits) {
-            case "Banana":
-            text = "Banana is good!";
+        switch(zone) {
+            case "darwin centre".toLowerCase():
+            popup = myFunction();
             break;
-            case "Orange":
-            text = "I am not a fan of orange.";
-            break;
-            case "Apple":
-            text = "How you like them apples?";
+            case "earth hall":
+            popup = redZone();
             break;
             default:
-            text = "I have never heard of that fruit...";
+           popup = document.getElementById("searchWord").innerHTML = "<h3>Apologies, your input is not recognised, please try again</h3>";
+           clear();
         }
-        document.getElementById("demo").innerHTML = text;
-    }
+        document.getElementById("searchWord").style.display = popup;
+      }
+
+        function clear() {
+          $( "h3" ).fadeOut(3000);
+        }
 
 
 // $( ".group" ).show();
