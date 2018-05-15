@@ -12,6 +12,43 @@
 
       </script>
 
+      <script type="text/javascript">
+        function readXML() {
+          // var xml=new XMLHttpRequest();
+          // xml.open('GET', 'visitorFeed.xml', false);
+          // xml.send();
+          // var xmlData=xml.responseXML;
+          // if(!xmlData) {
+          //   xmlData=(new DOMParser()).parseFromString(xml.responseText, 'text/xml');
+          // };
+          // var emp=xmlData.getElementsByTagName("feed");
+          // var name=emp[0].getElementsByTagName("url")[0].firstChild.data;
+          // document.write("Name="+url+"<br");
+          function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                myFunction(this);
+              }
+            };
+            xhttp.open("GET", "visitorFeed.xml", true);
+            xhttp.send();
+          }
+          function myFunction(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table="<tr><th>url</th>";
+            var x = xmlDoc.getElementsByTagName("url");
+            for (i = 0; i <x.length; i++) {
+              table += "<tr><td>" +
+              x[i].getElementsByTagName("url")[0].childNodes[0].nodeValue +
+              "</td><td>";
+            }
+            document.getElementById("demo").innerHTML = table;
+        }
+      }
+      </script>
+
   </head>
   <body>
 
@@ -25,6 +62,10 @@
       <button id="zoom-in">+</button>
       <button id="zoom-out">-</button>
       <button id="reset">Reset</button>
+    </div>
+
+    <div class="readXml">
+      <button onclick="readXML()">read XML</button>
     </div>
 
     <svg class="us" height="830" width="1450" viewBox="0, 0, 600, 200" style="border: solid 1px blue;">
@@ -195,6 +236,12 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 Where can I get some?
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
     </div>
+
+
+
+    <div class="protoio-embed-prototype" data-code="EXKCK2" data-show-sidebuttons="0" style="width: 100%; height: 800px;"></div>
+<script async src="https://static.proto.io/api/widget-embed.js">
+</script>
 
     <script>
 
