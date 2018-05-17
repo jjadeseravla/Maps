@@ -12,43 +12,6 @@
 
       </script>
 
-      <script type="text/javascript">
-        function readXML() {
-          // var xml=new XMLHttpRequest();
-          // xml.open('GET', 'visitorFeed.xml', false);
-          // xml.send();
-          // var xmlData=xml.responseXML;
-          // if(!xmlData) {
-          //   xmlData=(new DOMParser()).parseFromString(xml.responseText, 'text/xml');
-          // };
-          // var emp=xmlData.getElementsByTagName("feed");
-          // var name=emp[0].getElementsByTagName("url")[0].firstChild.data;
-          // document.write("Name="+url+"<br");
-          function loadDoc() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-              if (this.readyState == 4 && this.status == 200) {
-                myFunction(this);
-              }
-            };
-            xhttp.open("GET", "visitorFeed.xml", true);
-            xhttp.send();
-          }
-          function myFunction(xml) {
-            var i;
-            var xmlDoc = xml.responseXML;
-            var table="<tr><th>url</th>";
-            var x = xmlDoc.getElementsByTagName("url");
-            for (i = 0; i <x.length; i++) {
-              table += "<tr><td>" +
-              x[i].getElementsByTagName("url")[0].childNodes[0].nodeValue +
-              "</td><td>";
-            }
-            document.getElementById("demo").innerHTML = table;
-        }
-      }
-      </script>
-
   </head>
   <body>
 
@@ -65,10 +28,13 @@
     </div>
 
     <div class="readXml">
-      <button onclick="readXML()">read XML</button>
+      <button id="button">read XML</button>
+      <br><br>
+      <div id="text"></div>
+
     </div>
 
-    <svg class="us" height="830" width="1450" viewBox="0, 0, 600, 200" style="border: solid 1px blue;">
+    <svg class="us" height="830" width="1440" viewBox="0, 0, 600, 200" style="border: solid 1px blue;">
       <style>
         .group:hover {
           fill: grey;
@@ -203,7 +169,7 @@
   </body> -->
 
     <div id="myDIV" class="textBox" style="display:none;">
-      <img src="sophie.jpg" style="margin:auto; width:200px;display:block" />
+      <img src="images/sophie.jpg" style="margin:auto; width:200px;display:block" />
       <h3>Welcome to the Earth Hall!</h3>
       <p>Meet our incredible dinosaur specimen, the most intact Stegosaurus fossil skeleton ever found.</p>
       <p>Sophie is three metres tall and almost six metres long, but wasn't even fully grown when they died.</p>
@@ -214,7 +180,7 @@
     </div>
 
     <div id="red" class="textBox" style="display:none;">
-      <img src="redZone.jpg" style="margin:auto; width:200px;display:block" />
+      <img src="images/redZone.jpg" style="margin:auto; width:200px;display:block" />
       <h3>Lasting Impressions, Red Zone</h3>
       <p>Examine remarkable fossil evidence of long-ago events in the Last Impressions gallery.</p>
       <p>From 200-million-year-old wave ripples on beach sand to a petrified tree stump, dinosaur footprints
@@ -239,9 +205,9 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 
 
 
-    <div class="protoio-embed-prototype" data-code="EXKCK2" data-show-sidebuttons="0" style="width: 100%; height: 800px;"></div>
+    <!-- <div class="protoio-embed-prototype" data-code="EXKCK2" data-show-sidebuttons="0" style="width: 100%; height: 800px;"></div>
 <script async src="https://static.proto.io/api/widget-embed.js">
-</script>
+</script> -->
 
     <script>
 
@@ -264,5 +230,40 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 
     </script>
   </body>
+
+  <script type="text/javascript">
+    //create event listener
+    document.getElementById('button').addEventListener('click', loadText);
+
+    function loadText() {
+      //create XHR object
+      var xhr = new XMLHttpRequest();
+
+      //OPEN - type, url/file, async
+      xhr.open("GET", "visitorFeed.xml", true);
+      xhr.onload = function() {
+        console.log('READYSTATE: ', xhr.readyState);
+        if(this.status == 200) {
+          //myFunction(this);
+          document.getElementById('text').innerHTML = this.responseText;
+        }
+      }
+      xhr.send();
+      // function myFunction(xml) {
+      //   var i;s
+      //}
+      //   var xmlDoc = xml.responseXML;
+      //   var table="<tr><th>url</th>";
+      //   var x = xmlDoc.getElementsByTagName("url");
+      //   for (i = 0; i <x.length; i++) {
+      //     table += "<tr><td>" +
+      //     x[i].getElementsByTagName("url")[0].childNodes[0].nodeValue +
+      //     "</td><td>";
+      //   }
+      //document.getElementById("demo").innerHTML = table;
+      document.getElementById('text').innerHTML = this.responseText;
+    //}
+    }
+  </script>
 
 </html>
