@@ -27,10 +27,13 @@
       <button id="reset">Reset</button>
     </div>
 
-    <div class="readXml">
-      <button id="button">read XML</button>
-      <br><br>
-      <div id="text"></div>
+    <!-- <div class="readXml">
+      <button id="button">read XML</button> -->
+      <button id="button1">Get Jade</button>
+      <h1>This person:</h1>
+      <div id="user"></div>
+      <!-- <br><br>
+      <div id="text"></div> -->
 
     </div>
 
@@ -233,19 +236,28 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 
   <script type="text/javascript">
     //create event listener
-    document.getElementById('button').addEventListener('click', loadText);
+    document.getElementById('button1').addEventListener('click', loadUser);
 
-    function loadText() {
+    function loadUser() {
       //create XHR object
       var xhr = new XMLHttpRequest();
 
       //OPEN - type, url/file, async
-      xhr.open("GET", "visitorFeed.xml", true);
+      xhr.open("GET", "user.json", true);
       xhr.onload = function() {
-        console.log('READYSTATE: ', xhr.readyState);
-        if(this.status == 200) {
+        //console.log('READYSTATE: ', xhr.readyState);
+        if(this.status == 0) {
           //myFunction(this);
-          document.getElementById('text').innerHTML = this.responseText;
+          var user = JSON.parse(this.responseText);
+
+          var output = "";
+          output += "<ul>" +
+            "<li>id: " +user.id+ "</li>" +
+            "<li>name: " +user.name+ "</li>" +
+            "<li>email: " +user.email+ "</li>" +
+            "</ul>";
+            document.getElementById("user").innerHTML = output;
+          //document.getElementById('text').innerHTML = this.responseText;
         }
       }
       xhr.send();
@@ -261,7 +273,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
       //     "</td><td>";
       //   }
       //document.getElementById("demo").innerHTML = table;
-      document.getElementById('text').innerHTML = this.responseText;
+      //document.getElementById('text').innerHTML = this.responseText;
     //}
     }
   </script>
