@@ -246,8 +246,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
       xhr.open("GET", "user.json", true);
       xhr.onload = function() {
         //console.log('READYSTATE: ', xhr.readyState);
-        if(this.status == 0) {
-          //myFunction(this);
+        if(this.status == 0) { //if on a server need this.status == 200
           var user = JSON.parse(this.responseText);
 
           var output = "";
@@ -257,24 +256,9 @@ There are many variations of passages of Lorem Ipsum available, but the majority
             "<li>email: " +user.email+ "</li>" +
             "</ul>";
             document.getElementById("user").innerHTML = output;
-          //document.getElementById('text').innerHTML = this.responseText;
         }
       }
       xhr.send();
-      // function myFunction(xml) {
-      //   var i;s
-      //}
-      //   var xmlDoc = xml.responseXML;
-      //   var table="<tr><th>url</th>";
-      //   var x = xmlDoc.getElementsByTagName("url");
-      //   for (i = 0; i <x.length; i++) {
-      //     table += "<tr><td>" +
-      //     x[i].getElementsByTagName("url")[0].childNodes[0].nodeValue +
-      //     "</td><td>";
-      //   }
-      //document.getElementById("demo").innerHTML = table;
-      //document.getElementById('text').innerHTML = this.responseText;
-    //}
     }
 
     //create event listener
@@ -290,7 +274,15 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 
       xhr.onload = function() {
         if(this.status == 0) {
-          document.getElementById('text').innerHTML = this.responseText;
+          var items = JSON.parse(this.responseText);
+
+          var output = "";
+          for(var i in items) {
+            output +=
+            '<div class="item">' +
+            'img src="'+items[i].url+'" width="70" height="70">'}
+          //document.getElementById('text').innerHTML = this.responseText;
+          document.getElementById('items').innerHTML = output;
         }
       }
       xhr.send();
