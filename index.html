@@ -246,7 +246,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
       xhr.open("GET", "user.json", true);
       xhr.onload = function() {
         //console.log('READYSTATE: ', xhr.readyState);
-        if(this.status == 0) { //if on a server need this.status == 200
+        if(this.status == 200) { //if on a server need this.status == 200
           var user = JSON.parse(this.responseText);
 
           var output = "";
@@ -269,11 +269,11 @@ There are many variations of passages of Lorem Ipsum available, but the majority
       var xhr = new XMLHttpRequest();
 
       //OPEN - type, url/file, async
-      xhr.open("GET", "visitorFeed.xml", true);
+      xhr.open("GET", "user.json", true);
       console.log('READYSTATE: ', xhr.readyState);
 
       xhr.onload = function() {
-        if(this.status == 0) {
+        if(this.status == 200) {
           var items = JSON.parse(this.responseText);
 
           var output = "";
