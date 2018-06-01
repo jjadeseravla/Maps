@@ -1,17 +1,17 @@
 var http = require('http');
-var fs = require('fs');
-var path = require('path');
+var fs = require('fs'); //file system module allow you to work with the file system on your computer.
+var path = require('path'); //working with directories and file paths.
 
-http.createServer(function (request, response) {
-    console.log('request starting...');
+http.createServer(function (request, response) { //creates HTTP server object
+    //console.log('request starting...');
 
     var filePath = '.' + request.url;
     if (filePath == './')
-        filePath = './index.html';
+        filePath = './index.html'; //if file path is slash let it be index.html
 
-    var extname = path.extname(filePath);
+    var extname = path.extname(filePath);  //get the extension from a file path
     var contentType = 'text/html';
-    switch (extname) {
+    switch (extname) { // switch statements are a form of routing.  a more complex form is using express
         case '.js':
             contentType = 'text/javascript';
             break;
@@ -24,6 +24,9 @@ http.createServer(function (request, response) {
         case '.jpg':
             contentType = 'image/jpg';
             break;
+            case '.xml':
+                contentType = 'text/xml';
+                break;
     }
 
     fs.readFile(filePath, function(error, content) {
@@ -35,9 +38,9 @@ http.createServer(function (request, response) {
                 });
             }
             else {
-                response.writeHead(500);
+                response.writeHead(500); //writehead method explicitly writes the status code and headers to the response stream. response object is a writable stream.
                 response.end('Sorry, check with the site admin for error: '+error.code+' ..\n');
-                response.end();
+                response.end();//end function on streams can also take some optional data to send as the last bit of data on the stream
             }
         }
         else {
@@ -46,7 +49,7 @@ http.createServer(function (request, response) {
         }
     });
 
-}).listen(8125);
+}).listen(8125); //listen method needs to be called on the server object to serve requests
 console.log('Server running at http://127.0.0.1:8125/');
 
 

@@ -57,6 +57,8 @@ var allStates = $("svg.us > *");
     }
 
 
+
+
     // var svgimage = svgPanZoom('.us');
     //
     // svgPanZoom('#us', {

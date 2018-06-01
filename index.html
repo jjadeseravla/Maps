@@ -241,7 +241,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
     function loadUser() {
       //create XHR object
       var xhr = new XMLHttpRequest();
-
+    
       //OPEN - type, url/file, async
       xhr.open("GET", "user.json", true);
       xhr.onload = function() {
@@ -261,32 +261,36 @@ There are many variations of passages of Lorem Ipsum available, but the majority
       xhr.send();
     }
 
-    //create event listener
-    document.getElementById('button').addEventListener('click', loadText);
-
-    function loadText() {
-      //create XHR object
-      var xhr = new XMLHttpRequest();
-
-      //OPEN - type, url/file, async
-      xhr.open("GET", "user.json", true);
-      console.log('READYSTATE: ', xhr.readyState);
-
-      xhr.onload = function() {
-        if(this.status == 200) {
-          var items = JSON.parse(this.responseText);
-
-          var output = "";
-          for(var i in items) {
-            output +=
-            '<div class="item">' +
-            'img src="'+items[i].url+'" width="70" height="70">'}
-          //document.getElementById('text').innerHTML = this.responseText;
-          document.getElementById('items').innerHTML = output;
-        }
-      }
-      xhr.send();
-    }
+    // //create event listener
+    // document.getElementById('button').addEventListener('click', loadText);
+    //
+    // function loadText() {
+    //   //create XHR object
+    //   var xhr = new XMLHttpRequest();
+    //
+    //   //OPEN - type, url/file, async
+    //   xhr.open("GET", "user.json", true);
+    //   console.log('READYSTATE: ', xhr.readyState);
+    //
+    //   xhr.onload = function() {
+    //     if(this.status == 200) {
+    //       // var items = JSON.parse(this.responseText);
+    //       // console.log(this.responseText);
+    //       xmlDoc = $.parseXML( this.responseText ),
+    //       $this.responseText = $( xmlDoc ),
+    //       $url = $this.responseText.find( "url" );
+    //
+    //       var output = "";
+    //       for(var i in items) {
+    //         output +=
+    //         '<div class="item">' +
+    //         'img src="'+items[i].url+'" width="70" height="70">'}
+    //       //document.getElementById('text').innerHTML = this.responseText;
+    //       document.getElementById('items').innerHTML = output;
+    //     }
+    //   }
+    //   xhr.send();
+    // }
   </script>
 
 </html>
