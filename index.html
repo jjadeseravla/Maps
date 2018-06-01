@@ -28,7 +28,8 @@
     </div>
 
     <div class="readXml">
-      <button id="button">read XML</button>
+      <!-- <button id="button2">read XML</button> -->
+      <button id="button" onclick="loadText()">Get XML data</button>
       <button id="button1">Get Jade</button>
       <h1>This person:</h1>
       <div id="user"></div>
@@ -232,65 +233,134 @@ There are many variations of passages of Lorem Ipsum available, but the majority
       });
 
     </script>
-  </body>
 
   <script type="text/javascript">
-    //create event listener
-    document.getElementById('button1').addEventListener('click', loadUser);
 
-    function loadUser() {
-      //create XHR object
-      var xhr = new XMLHttpRequest();
-    
-      //OPEN - type, url/file, async
-      xhr.open("GET", "user.json", true);
-      xhr.onload = function() {
-        //console.log('READYSTATE: ', xhr.readyState);
-        if(this.status == 200) { //if on a server need this.status == 200
-          var user = JSON.parse(this.responseText);
 
-          var output = "";
-          output += "<ul>" +
-            "<li>id: " +user.id+ "</li>" +
-            "<li>name: " +user.name+ "</li>" +
-            "<li>email: " +user.email+ "</li>" +
-            "</ul>";
-            document.getElementById("user").innerHTML = output;
-        }
-      }
-      xhr.send();
-    }
+      // function loadDoc() {
+      //   var xhttp = new XMLHttpRequest();
+      //   xhttp.onreadystatechange = function() {
+      //     if (this.readyState == 4 && this.status == 200) {
+      //       //console.log(this);
+      //       myFunction(this); // this = XMLHttpRequest
+      //     }
+      //   };
+      //   xhttp.open("GET", "visitorFeed.xml", true);
+      //   xhttp.send();
+      // }
+      // function myFunction(xml) {
+      //   var i;
+      //   var xmlDoc = xml.responseXML;
+      //   var table="<tr><th>author</th></tr>";
+      //   var x = xmlDoc.getElementsByTagName("book");
+      //   for (i = 0; i <x.length; i++) {
+      //     table += "<tr><td>" +
+      //     x[i].getElementsByTagName("author")[0] + "</td><td>";
+      //   }
+      //   document.getElementById("demo").innerHTML = table; //x[1].innerHTML;
+      // }
 
+      // function loadDoc(url) {
+      //   var xhttp = new XMLHttpRequest();
+      //   xhttp.onreadystatechange = function() {
+      //     if (this.readyState == 4 && this.status == 200) {
+      //       document.getElementById('items').innerHTML = this.responseText;
+      //     }
+      //   };
+      //   xhttp.open("GET", url, true);
+      //   xhttp.send();
+      // }
+
+
+  </script>
+
+  </body>
+
+  <script>
     // //create event listener
-    // document.getElementById('button').addEventListener('click', loadText);
+    // document.getElementById('button1').addEventListener('click', loadUser);
     //
-    // function loadText() {
+    // function loadUser() {
     //   //create XHR object
     //   var xhr = new XMLHttpRequest();
     //
     //   //OPEN - type, url/file, async
     //   xhr.open("GET", "user.json", true);
-    //   console.log('READYSTATE: ', xhr.readyState);
-    //
     //   xhr.onload = function() {
-    //     if(this.status == 200) {
-    //       // var items = JSON.parse(this.responseText);
-    //       // console.log(this.responseText);
-    //       xmlDoc = $.parseXML( this.responseText ),
-    //       $this.responseText = $( xmlDoc ),
-    //       $url = $this.responseText.find( "url" );
+    //     //console.log('READYSTATE: ', xhr.readyState);
+    //     if(this.status == 200) { //if on a server need this.status == 200
+    //       var user = JSON.parse(this.responseText);
     //
     //       var output = "";
-    //       for(var i in items) {
-    //         output +=
-    //         '<div class="item">' +
-    //         'img src="'+items[i].url+'" width="70" height="70">'}
-    //       //document.getElementById('text').innerHTML = this.responseText;
-    //       document.getElementById('items').innerHTML = output;
+    //       output += "<ul>" +
+    //         "<li>id: " +user.id+ "</li>" +
+    //         "<li>name: " +user.name+ "</li>" +
+    //         "<li>email: " +user.email+ "</li>" +
+    //         "</ul>";
+    //         document.getElementById("user").innerHTML = output;
     //     }
     //   }
     //   xhr.send();
     // }
-  </script>
+
+
+
+
+
+
+
+
+
+    //create event listener
+    document.getElementById('button').addEventListener('click', loadText);
+
+    function loadText() {
+      //create XHR object
+      var xhr = new XMLHttpRequest();
+
+      //OPEN - type, url/file, async
+      xhr.open("GET", "visitorfeed.xml", true);
+      console.log('READYSTATE: ', xhr.readyState);
+
+      xhr.onload = function() {
+        if(this.status == 200) {
+          // var items = JSON.parse(this.responseText);
+          // console.log(this.responseText);
+          xmlDoc = $.parseXML( this.responseText ),
+          //this.responseText = $( xmlDoc ),
+          $xml = $( xmlDoc )
+          itemArray = $xml.find( "item" );
+          //for loop Here
+
+          firstItem = $xml.find( "item" )[0];
+          console.log('url:' + firsItem.innerHTML);
+           $($xml.find( "item" )[10]).find("name")[0].innerHTML
+
+          var output = "";
+          for(var i in items) {
+            output +=
+            '<div class="item">' +
+            'img src="'+items[i].url+'" width="70" height="70">'}
+          //document.getElementById('text').innerHTML = this.responseText;
+          document.getElementById('items').innerHTML = output;
+        }
+      }
+      xhr.send();
+    }
+
+    // function loadDoc(url) {
+    //   var xhttp = new XMLHttpRequest();
+    //   xhttp.onreadystatechange = function() {
+    //     if (this.readyState == 4 && this.status == 200) {
+    //       // document.getElementById('urk').innerHTML = this.status;
+    //       // document.getElementById('A2').innerHTML = this.statusText;
+    //       document.getElementById(url).innerHTML = this.responseText;
+    //     }
+    //   };
+    //   xhttp.open("GET", url, true);
+    //   xhttp.send();
+    // }
+
+</script>
 
 </html>

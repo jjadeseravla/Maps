@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jjadeseravla/Maps/issues"
   },
-  "homepage": "https://github.com/jjadeseravla/Maps#readme"
+  "homepage": "https://github.com/jjadeseravla/Maps#readme",
+  "dependencies": {
+    "nodemon": "^1.17.5"
+  }
 }
