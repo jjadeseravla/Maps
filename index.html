@@ -201,12 +201,12 @@
       <h2>What's on today</h2>
       <div id="demo"></div>
       <div id="nameTitle"></div><br>
-      <!-- <div id="categoryType">Event type: </div> -->
+      <div id="categoryType">Event type: </div>
       <script type="text/javascript">
       window.onload = function() {
         document.getElementById("demo").innerHTML = loadText();
         document.getElementById("nameTitle").innerHTML = loadText();
-        //document.getElementById("categoryType").innerHTML = loadText();
+        document.getElementById("categoryType").innerHTML = loadText();
       }
 
       </script>
@@ -315,8 +315,8 @@
              var name = $($xml.find( "item" )[i]).find("name")[0].innerHTML;
              document.getElementById("nameTitle").innerHTML = "<h3>" + name + "</h3>";
              console.log(name);
-             //var category = $($($xml.find( "item" )[i]).find("categories")[0]).find("category").innerHTML;
-             //document.getElementById("categoryType").innerHTML = " <p style="background-color: grey;">" + category + "</h3>";
+             var category = $($($xml.find( "item" )[i]).find("categories")[0]).find("category")[0].innerHTML;
+             document.getElementById("categoryType").innerHTML = "<h4>Event Type: " + category + "</h4>";
           //   var answer = $($xml.find( "item" )[i]).find("name")[0].innerHTML;
           //   arr.push(answer);
           //   console.log(answer);
