@@ -89,11 +89,13 @@ var allStates = $("svg.us > *");
                newDiv.innerHTML += "<h3>" + name + "</h3>";
                var category = $($($xml.find( "item" )[i]).find("categories")[0]).find("category")[0].innerHTML;
                newDiv.innerHTML += "<h4>Event Type: " + category + "</h4>";
+               var button = document.createElement('button');
+               button.setAttribute('class', 'button');
+               button.innerHTML = '<div id="whereOnMap" onclick="msg();">Find on Map</div>';
                toAdd.appendChild(newDiv);
+               toAdd.appendChild(button);
              }
              eventContainer.appendChild(toAdd);
-
-
              // var image = $($xml.find( "item" )[10]).find("image_url")[0].innerHTML;
              // document.getElementById("demo").innerHTML = "<img src=" + image + " />";
              // var name = $($xml.find( "item" )[10]).find("name")[0].innerHTML;
@@ -111,12 +113,18 @@ var allStates = $("svg.us > *");
             //document.getElementById('text').innerHTML = this.responseText;
             //document.getElementById('items').innerHTML = output;
           }
-          //return arr[i];
         }
         xhr.send();
       }
 
 
+      function msg() {
+        //document.getElementById('whereOnMap').innerHTML =
+        alert(2);
+      }
+      // _e('btn').onclick = function() {
+      //     _e('demo').innerHTML = 'Hey There';
+      // }
 
 
 
