@@ -84,7 +84,7 @@
           padding: 20px;
         }
 
-        .whatsOnToday {
+        #whatsOnToday {
           float: right;
           border: 1px solid #000000;
           width: 360px;
@@ -197,35 +197,11 @@
       <button id="closeBox"class="close" onclick="exit()">X</button>
     </div>
 
-    <div class="whatsOnToday" >
+    <div id="whatsOnToday" >
       <h2>What's on today</h2>
-      <div id="demo"></div>
-      <div id="nameTitle"></div><br>
-      <div id="categoryType">Event type: </div>
-      <script type="text/javascript">
-      window.onload = function() {
-        document.getElementById("demo").innerHTML = loadText();
-        document.getElementById("nameTitle").innerHTML = loadText();
-        document.getElementById("categoryType").innerHTML = loadText();
-      }
-
-      </script>
       <p>Earth hall</p>
       <button id="button" onclick="loadText()">Get XML data</button>
-        <p>
-        Where does it come from?
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-        [32] Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non-numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
-        [33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non-provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non-recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat…
-        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
 
-        Where can I get some?
-        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-        time
-        ticket prices
-        decription
-
-        Tickets available on the door.
         <button type="button" name="button" onclick="myFunction()">Find on Map</button><br>
     </div>
 
@@ -257,6 +233,10 @@
     //create event listener
     document.getElementById('button').addEventListener('click', loadText);
 
+    window.onload = function() {
+       loadText();
+    }
+
     function loadText() {
       //create XHR object
       var xhr = new XMLHttpRequest();
@@ -276,19 +256,21 @@
 
           //for loop Here
            // var arr = [];
+           var toAdd = document.createDocumentFragment();
+           var eventContainer = document.getElementById("whatsOnToday");
            for ( var i = 0; i < itemArray.length; i++) {
+             var newDiv = document.createElement('div');
+             newDiv.id = 'event'+i;
+             newDiv.className = 'whatsOnEventItem';
              var image = $($xml.find( "item" )[i]).find("image_url")[0].innerHTML;
-             document.getElementById("demo").innerHTML += "<img src=" + image + " />";
+             newDiv.innerHTML += "<img src=" + image + " />";
              var name = $($xml.find( "item" )[i]).find("name")[0].innerHTML;
-             document.getElementById("nameTitle").innerHTML += "<h3>" + name + "</h3>";
+             newDiv.innerHTML += "<h3>" + name + "</h3>";
              var category = $($($xml.find( "item" )[i]).find("categories")[0]).find("category")[0].innerHTML;
-             document.getElementById("categoryType").innerHTML += "<h4>Event Type: " + category + "</h4>";
-          //   var answer = $($xml.find( "item" )[i]).find("name")[0].innerHTML;
-          //   arr.push(answer);
-          //   console.log(answer);
+             newDiv.innerHTML += "<h4>Event Type: " + category + "</h4>";
+             toAdd.appendChild(newDiv);
            }
-           console.log(category);
-
+           eventContainer.appendChild(toAdd);
 
 
            // var image = $($xml.find( "item" )[10]).find("image_url")[0].innerHTML;
