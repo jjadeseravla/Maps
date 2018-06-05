@@ -57,6 +57,73 @@ var allStates = $("svg.us > *");
     }
 
 
+      //create event listener
+      document.getElementById('button').addEventListener('click', loadText);
+
+      window.onload = function() {
+         loadText();
+      }
+  
+      function loadText() {
+        //create XHR object
+        var xhr = new XMLHttpRequest();
+
+        //OPEN - type, url/file, async
+        xhr.open("GET", "visitorfeed.xml", true);
+
+        xhr.onload = function() {
+          if(this.status == 200) {
+            // var items = JSON.parse(this.responseText);
+            // console.log(this.responseText);
+            xmlDoc = $.parseXML( this.responseText ),
+            //this.responseText = $( xmlDoc ),
+            $xml = $( xmlDoc )
+            itemArray = $xml.find( "item" );
+            console.log('READYSTATE: ', xhr.readyState);
+
+            //for loop Here
+             // var arr = [];
+             var toAdd = document.createDocumentFragment();
+             var eventContainer = document.getElementById("whatsOnToday");
+             for ( var i = 0; i < itemArray.length; i++) {
+               var newDiv = document.createElement('div');
+               newDiv.id = 'event'+i;
+               newDiv.className = 'whatsOnEventItem';
+               var image = $($xml.find( "item" )[i]).find("image_url")[0].innerHTML;
+               newDiv.innerHTML += "<img src=" + image + " />";
+               var name = $($xml.find( "item" )[i]).find("name")[0].innerHTML;
+               newDiv.innerHTML += "<h3>" + name + "</h3>";
+               var category = $($($xml.find( "item" )[i]).find("categories")[0]).find("category")[0].innerHTML;
+               newDiv.innerHTML += "<h4>Event Type: " + category + "</h4>";
+               toAdd.appendChild(newDiv);
+             }
+             eventContainer.appendChild(toAdd);
+
+
+             // var image = $($xml.find( "item" )[10]).find("image_url")[0].innerHTML;
+             // document.getElementById("demo").innerHTML = "<img src=" + image + " />";
+             // var name = $($xml.find( "item" )[10]).find("name")[0].innerHTML;
+             // document.getElementById("nameTitle").innerHTML = name;
+
+            //console.log(firstItem = $xml.find( "item" )[0]); //-good
+            //console.log('url:' + firsItem.innerHTML);
+             //$($xml.find( "item" )[10]).find("name")[0].innerHTML; // - good   sensational butterflies
+
+            //var output = "";
+            // for(var i in items) {
+            //   output +=
+            //   '<div class="item">' +
+            //   'img src="'+items[i].url+'" width="70" height="70">'}
+            //document.getElementById('text').innerHTML = this.responseText;
+            //document.getElementById('items').innerHTML = output;
+          }
+          //return arr[i];
+        }
+        xhr.send();
+      }
+
+
+
 
 
     // var svgimage = svgPanZoom('.us');

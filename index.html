@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"/> -->
     <script src="svg-pan-zoom.js"></script>
       <!-- <script src="scripts/snap.svg-min.js"></script> -->
       <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -11,7 +11,7 @@
       <script src="main.js">
 
       </script>
-
+      <link rel="stylesheet" href="styles.css">
   </head>
   <body>
 
@@ -37,105 +37,6 @@
     </div>
 
     <svg class="us" height="830" width="1440" viewBox="0, 0, 600, 200" style="border: solid 1px blue;">
-      <style>
-        .group:hover {
-          fill: grey;
-        }
-        .group2:hover {
-          fill: grey;
-        }
-        .group3:hover {
-          fill: grey;
-        }
-        /* .group4:hover {
-          fill: grey;
-        } */
-        .group5:hover {
-          fill: grey;
-          /* position: absolute; */
-        }
-
-        .textBox {
-          position: fixed;
-          top: 43%;
-          left: 75%;
-          width: 21em;
-          height: 17em;
-          margin-top: -15em;
-          margin-left: -10em;
-          border: 1px solid #000000;
-          background-color: #ffffff;
-          overflow:auto;
-        }
-
-        .on {
-          fill: grey;
-          stroke: red;
-          stroke-width: 1;
-        }
-
-        .close {
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-
-        body {
-          padding: 20px;
-        }
-
-        #whatsOnToday {
-          float: right;
-          border: 1px solid #000000;
-          width: 360px;
-          height: 830px;
-          overflow:auto;
-          overflow-y: scroll;
-          overflow-x: hidden;
-        }
-
-        #demo {
-          width: 360px !important;
-        }
-
-
-        /* html,body{
-      width: 100%;
-      height: 100%;
-    }
-    #mainViewContainer {
-      width: 95%;
-      height: 95%;
-      border: 1px solid black;
-      margin: 10px;
-      padding: 3px;
-      overflow: hidden;
-    }
-    #mainView {
-      width: 100%;
-      height: 100%;
-      min-height: 100%;
-      display: inline;
-    }
-    .thumbViewClass {
-      border: 1px solid black;
-      position: absolute;
-      bottom: 5px;
-      left: 5px;
-      width: 20%;
-      height: 30%;
-      margin: 3px;
-      padding: 3px;
-      overflow: hidden;
-    }
-    #thumbView {
-      z-index: 110;
-      background: white;
-    }
-    #scopeContainer {
-      z-index: 120;
-    } */
-      </style>
 
 
       <g class="group">
@@ -157,25 +58,6 @@
 
     <!-- <animate xlink:href="#box1" attributeName="fill" from="#538B93" to="#0F5156" dur="1s" repeatCount="indefinite" />  -->
     </svg>
-<!--
-    <div id="thumbViewContainer">
-      <svg id="scopeContainer" class="thumbViewClass">
-        <g>
-          <rect id="scope" fill="red" fill-opacity="0.1" stroke="red" stroke-width="2px" x="0" y="0" width="0" height="0"/>
-          <line id="line1" stroke="red" stroke-width="2px" x1="0" y1="0" x2="0" y2="0"/>
-          <line id="line2" stroke="red" stroke-width="2px" x1="0" y1="0" x2="0" y2="0"/>
-        </g>
-      </svg>
-      <embed id="thumbView" type="image/svg+xml" src="tiger.svg" class="thumbViewClass"/>
-    </div>
-
-    <script src="svg-pan-zoom.js" type="text/javascript" ></script>
-    <script src="thumbnailViewer.js" type="text/javascript" ></script>
-
-    <script type="text/javascript">
-      thumbnailViewer({mainViewId: 'mainView',thumbViewId: 'thumbView'});
-    </script>
-  </body> -->
 
     <div id="myDIV" class="textBox" style="display:none;">
       <img src="images/sophie.jpg" style="margin:auto; width:200px;display:block" />

@@ -1,1 +1,60 @@
 
+.group:hover {
+  fill: grey;
+}
+.group2:hover {
+  fill: grey;
+}
+.group3:hover {
+  fill: grey;
+}
+/* .group4:hover {
+  fill: grey;
+} */
+.group5:hover {
+  fill: grey;
+  /* position: absolute; */
+}
+
+.textBox {
+  position: fixed;
+  top: 43%;
+  left: 75%;
+  width: 21em;
+  height: 17em;
+  margin-top: -15em;
+  margin-left: -10em;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  overflow:auto;
+}
+
+.on {
+  fill: grey;
+  stroke: red;
+  stroke-width: 1;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#whatsOnToday {
+  float: right;
+  border: 1px solid #000000;
+  width: 360px;
+  height: 830px;
+  overflow:auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#demo {
+  width: 360px !important;
+}
+
+body {
+  padding: 20px;
+}
