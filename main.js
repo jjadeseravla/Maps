@@ -57,13 +57,7 @@ var allStates = $("svg.us > *");
     }
 
 
-      //create event listener
-      document.getElementById('button').addEventListener('click', loadText);
 
-      window.onload = function() {
-         loadText();
-      }
-  
       function loadText() {
         //create XHR object
         var xhr = new XMLHttpRequest();
