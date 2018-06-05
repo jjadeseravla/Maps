@@ -229,12 +229,6 @@
         <button type="button" name="button" onclick="myFunction()">Find on Map</button><br>
     </div>
 
-
-
-    <!-- <div class="protoio-embed-prototype" data-code="EXKCK2" data-show-sidebuttons="0" style="width: 100%; height: 800px;"></div>
-<script async src="https://static.proto.io/api/widget-embed.js">
-</script> -->
-
     <script>
 
     var panZoom = svgPanZoom('.us', {
@@ -259,33 +253,6 @@
   </body>
 
   <script>
-    // //create event listener
-    // document.getElementById('button1').addEventListener('click', loadUser);
-    //
-    // function loadUser() {
-    //   //create XHR object
-    //   var xhr = new XMLHttpRequest();
-    //
-    //   //OPEN - type, url/file, async
-    //   xhr.open("GET", "user.json", true);
-    //   xhr.onload = function() {
-    //     //console.log('READYSTATE: ', xhr.readyState);
-    //     if(this.status == 200) { //if on a server need this.status == 200
-    //       var user = JSON.parse(this.responseText);
-    //
-    //       var output = "";
-    //       output += "<ul>" +
-    //         "<li>id: " +user.id+ "</li>" +
-    //         "<li>name: " +user.name+ "</li>" +
-    //         "<li>email: " +user.email+ "</li>" +
-    //         "</ul>";
-    //         document.getElementById("user").innerHTML = output;
-    //     }
-    //   }
-    //   xhr.send();
-    // }
-
-
 
     //create event listener
     document.getElementById('button').addEventListener('click', loadText);
@@ -308,25 +275,19 @@
           console.log('READYSTATE: ', xhr.readyState);
 
           //for loop Here
-          // var arr = [];
-           for ( i = 0; i < itemArray.length; i--) {
+           // var arr = [];
+           for ( var i = 0; i < itemArray.length; i++) {
              var image = $($xml.find( "item" )[i]).find("image_url")[0].innerHTML;
-             document.getElementById("demo").innerHTML = "<img src=" + image + " />";
+             document.getElementById("demo").innerHTML += "<img src=" + image + " />";
              var name = $($xml.find( "item" )[i]).find("name")[0].innerHTML;
-             document.getElementById("nameTitle").innerHTML = "<h3>" + name + "</h3>";
-             console.log(name);
+             document.getElementById("nameTitle").innerHTML += "<h3>" + name + "</h3>";
              var category = $($($xml.find( "item" )[i]).find("categories")[0]).find("category")[0].innerHTML;
-             document.getElementById("categoryType").innerHTML = "<h4>Event Type: " + category + "</h4>";
+             document.getElementById("categoryType").innerHTML += "<h4>Event Type: " + category + "</h4>";
           //   var answer = $($xml.find( "item" )[i]).find("name")[0].innerHTML;
           //   arr.push(answer);
           //   console.log(answer);
            }
-          // var array = [];
-          // var title = $($xml.find( "item" )[10]).find("name")[0].innerHTML;
-          // var image = $($xml.find( "item" )[10]).find("image_url")[0].innerHTML;
-          // array.push(title, image);
-          //
-          // document.getElementById("demo").innerHTML = array;
+           console.log(category);
 
 
 
