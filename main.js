@@ -16,6 +16,15 @@ function redZone() {
     }
 }
 
+function tringZone() {
+    var x = document.getElementById("tringCircle");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
 function exit() {
   document.getElementById("closeBox").style.display="none";
   document.getElementById("closeBox").style.display="block";
@@ -44,6 +53,9 @@ var allStates = $("svg.us > *");
         break;
         case "earth hall":
         popup = redZone();
+        break;
+        case "tring".toLowerCase():
+        popup = tringZone();
         break;
         default:
        popup = document.getElementById("searchWord").innerHTML = "<h3>Apologies, your input is not recognised, please try again</h3>";
@@ -91,7 +103,7 @@ var allStates = $("svg.us > *");
                newDiv.innerHTML += "<h4>Event Type: " + category + "</h4>";
                var button = document.createElement('button');
                button.setAttribute('class', 'button');
-               button.innerHTML = '<div id="whereOnMap" onclick="msg();">Find on Map</div>';
+               button.innerHTML = '<div id="whereOnMap" onclick="pointOnMap();">Find on Map</div>';
                toAdd.appendChild(newDiv);
                toAdd.appendChild(button);
              }
@@ -118,10 +130,16 @@ var allStates = $("svg.us > *");
       }
 
 
-      function msg() {
-        //document.getElementById('whereOnMap').innerHTML =
-        alert(2);
-      }
+function pointOnMap() {
+  for ( var i = 0; i < itemArray.length; i++) {
+    if ($($($($xml.find( "item" )[i]).find("placemarks")[0]).find("placemark")[0]).find("name")[0].innerHTML == "Tring Park" ){
+      document.getElementById('whereOnMap').innerHTML = alert("yes this is Tring");
+      //alert(2);
+    } else {
+      document.getElementById('whereOnMap').innerHTML = alert("no this is not Tring");
+    }
+  }
+}
       // _e('btn').onclick = function() {
       //     _e('demo').innerHTML = 'Hey There';
       // }
