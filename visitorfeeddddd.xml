@@ -1,0 +1,1266 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<feed>
+<items>
+<item>
+<uid>152824140006200</uid>
+<name>Explore the galleries</name>
+<dtstart>Jun 06, 2018</dtstart>
+<dtend>Jun 06, 2018</dtend>
+<url>
+http://www.nhm.ac.ukhttp://www.nhm.ac.uk/visit/galleries-and-museum-map.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/visit/dinosaurs-gallery-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Throughout the Museum</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Self-led</category>
+</categories>
+<description>...</description>
+<calendar_type>Visitor</calendar_type>
+<custom_1>Families, Adults, Kids</custom_1>
+<custom_2>Free</custom_2>
+<custom_3>All day</custom_3>
+</item>
+<allday>true</allday>
+<item>
+<uid>152824140006210</uid>
+<name>Toddler Time at Tring</name>
+<dtstart>Jun 06, 2018 14:30</dtstart>
+<dtend>Jun 06, 2018 17:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/toddler-time.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/tring/toddler-time-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Galleries</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Self-led</category>
+</categories>
+<description>
+<![CDATA[
+Borrow something special and help your toddler explore and play around the Museum.
+]]>
+</description>
+<calendar_type>Tring</calendar_type>
+<custom_1>Families</custom_1>
+<custom_2>Free, drop-in</custom_2>
+<custom_3>14:30</custom_3>
+</item>
+<item>
+<uid>152824140006220</uid>
+<name>Welly Wednesday at Tring</name>
+<dtstart>Jun 06, 2018 10:30</dtstart>
+<dtend>Jun 06, 2018 11:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/welly-wednesday.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/tring/welly-wednesdays-tring-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>The Quad</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Outdoor activity, Drop-in</category>
+</categories>
+<description>
+<![CDATA[ Get hands-on in nature with your little ones. ]]>
+</description>
+<calendar_type>Tring</calendar_type>
+<custom_1>Families</custom_1>
+<custom_2>£3, drop-in</custom_2>
+<custom_3>10:30</custom_3>
+</item>
+<item>
+<uid>152824140006230</uid>
+<name>Behind-the-Scenes Tour: Spirit Collection</name>
+<dtstart>Jun 06, 2018 11:30</dtstart>
+<dtend>Jun 06, 2018 12:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/behind-the-scenes-tour-the-spirit-collection.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/visit/spirit-collection-tour-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Zoology spirit building</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Behind-the-scenes, Tour</category>
+</categories>
+<description>
+<![CDATA[
+Join our science educators for a behind-the-scenes look at the Museum's zoology spirit collection.
+]]>
+</description>
+<calendar_type>Visitor</calendar_type>
+<custom_1>Adults, Families</custom_1>
+<custom_2>£10</custom_2>
+<custom_3>11:30</custom_3>
+</item>
+<item>
+<uid>152824140006231</uid>
+<name>Behind-the-Scenes Tour: Spirit Collection</name>
+<dtstart>Jun 06, 2018 12:30</dtstart>
+<dtend>Jun 06, 2018 13:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/behind-the-scenes-tour-the-spirit-collection.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/visit/spirit-collection-tour-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Zoology spirit building</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Behind-the-scenes, Tour</category>
+</categories>
+<description>
+<![CDATA[
+Join our science educators for a behind-the-scenes look at the Museum's zoology spirit collection.
+]]>
+</description>
+<calendar_type>Visitor</calendar_type>
+<custom_1>Adults, Families</custom_1>
+<custom_2>£10</custom_2>
+<custom_3>12:30</custom_3>
+</item>
+<item>
+<uid>152824140006232</uid>
+<name>Behind-the-Scenes Tour: Spirit Collection</name>
+<dtstart>Jun 06, 2018 13:30</dtstart>
+<dtend>Jun 06, 2018 14:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/behind-the-scenes-tour-the-spirit-collection.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/visit/spirit-collection-tour-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Zoology spirit building</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Behind-the-scenes, Tour</category>
+</categories>
+<description>
+<![CDATA[
+Join our science educators for a behind-the-scenes look at the Museum's zoology spirit collection.
+]]>
+</description>
+<calendar_type>Visitor</calendar_type>
+<custom_1>Adults, Families</custom_1>
+<custom_2>£10</custom_2>
+<custom_3>13:30</custom_3>
+</item>
+<item>
+<uid>152824140006240</uid>
+<name>Explorers: Ourselves and Other Animals</name>
+<dtstart>Jun 06, 2018 10:30</dtstart>
+<dtend>Jun 06, 2018 11:30</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-explorers-ourselves-and-other-animals.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/explorers-activity-pack-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>School Reception</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Self-led</category>
+</categories>
+<description>
+<![CDATA[
+Develop your pupils' science skills with this self-guided tour through the Museum.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£1 per student</custom_2>
+<custom_3>10:30</custom_3>
+</item>
+<item>
+<uid>152824140006241</uid>
+<name>Explorers: Ourselves and Other Animals</name>
+<dtstart>Jun 06, 2018 11:30</dtstart>
+<dtend>Jun 06, 2018 12:30</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-explorers-ourselves-and-other-animals.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/explorers-activity-pack-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>School Reception</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Self-led</category>
+</categories>
+<description>
+<![CDATA[
+Develop your pupils' science skills with this self-guided tour through the Museum.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£1 per student</custom_2>
+<custom_3>11:30</custom_3>
+</item>
+<item>
+<uid>152824140006242</uid>
+<name>Explorers: Ourselves and Other Animals</name>
+<dtstart>Jun 06, 2018 12:30</dtstart>
+<dtend>Jun 06, 2018 13:30</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-explorers-ourselves-and-other-animals.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/explorers-activity-pack-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>School Reception</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Self-led</category>
+</categories>
+<description>
+<![CDATA[
+Develop your pupils' science skills with this self-guided tour through the Museum.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£1 per student</custom_2>
+<custom_3>12:30</custom_3>
+</item>
+<item>
+<uid>152824140006250</uid>
+<name>Emergency! Earthquakes and Volcanoes Show</name>
+<dtstart>Jun 06, 2018 10:30</dtstart>
+<dtend>Jun 06, 2018 11:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-emergency-earthquakes-volcanoes.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/emergency-volcanoes-figure-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Attenborough Studio</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Show</category>
+</categories>
+<description>
+<![CDATA[
+Transform into scientists to save a town from geological catastrophe in this action-packed show.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>10:30</custom_3>
+</item>
+<item>
+<uid>152824140006251</uid>
+<name>Emergency! Earthquakes and Volcanoes Show</name>
+<dtstart>Jun 06, 2018 11:30</dtstart>
+<dtend>Jun 06, 2018 12:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-emergency-earthquakes-volcanoes.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/emergency-volcanoes-figure-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Attenborough Studio</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Show</category>
+</categories>
+<description>
+<![CDATA[
+Transform into scientists to save a town from geological catastrophe in this action-packed show.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>11:30</custom_3>
+</item>
+<item>
+<uid>152824140006252</uid>
+<name>Emergency! Earthquakes and Volcanoes Show</name>
+<dtstart>Jun 06, 2018 12:30</dtstart>
+<dtend>Jun 06, 2018 13:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-emergency-earthquakes-volcanoes.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/emergency-volcanoes-figure-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Attenborough Studio</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Show</category>
+</categories>
+<description>
+<![CDATA[
+Transform into scientists to save a town from geological catastrophe in this action-packed show.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>12:30</custom_3>
+</item>
+<item>
+<uid>152824140006353</uid>
+<name>Emergency! Earthquakes and Volcanoes Show</name>
+<dtstart>Jun 06, 2018 13:30</dtstart>
+<dtend>Jun 06, 2018 14:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-emergency-earthquakes-volcanoes.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/emergency-volcanoes-figure-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Attenborough Studio</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Show</category>
+</categories>
+<description>
+<![CDATA[
+Transform into scientists to save a town from geological catastrophe in this action-packed show.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>13:30</custom_3>
+</item>
+<item>
+<uid>152824140006360</uid>
+<name>Super Stegosaurus Workshop</name>
+<dtstart>Jun 06, 2018 10:30</dtstart>
+<dtend>Jun 06, 2018 11:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-super-stegosaurus-workshop.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/stegosaurus-illustration-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Earth Hall, next to the <i>Stegosaurus</i></name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Investigate Stegosaurus and discover how scientists piece together fossil finds.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>10:30</custom_3>
+</item>
+<item>
+<uid>152824140006361</uid>
+<name>Super Stegosaurus Workshop</name>
+<dtstart>Jun 06, 2018 11:30</dtstart>
+<dtend>Jun 06, 2018 12:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-super-stegosaurus-workshop.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/stegosaurus-illustration-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Earth Hall, next to the <i>Stegosaurus</i></name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Investigate Stegosaurus and discover how scientists piece together fossil finds.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>11:30</custom_3>
+</item>
+<item>
+<uid>152824140006362</uid>
+<name>Super Stegosaurus Workshop</name>
+<dtstart>Jun 06, 2018 12:30</dtstart>
+<dtend>Jun 06, 2018 13:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-super-stegosaurus-workshop.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/stegosaurus-illustration-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Earth Hall, next to the <i>Stegosaurus</i></name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Investigate Stegosaurus and discover how scientists piece together fossil finds.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>12:30</custom_3>
+</item>
+<item>
+<uid>152824140006363</uid>
+<name>Super Stegosaurus Workshop</name>
+<dtstart>Jun 06, 2018 13:30</dtstart>
+<dtend>Jun 06, 2018 14:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-super-stegosaurus-workshop.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/stegosaurus-illustration-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Earth Hall, next to the <i>Stegosaurus</i></name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Investigate Stegosaurus and discover how scientists piece together fossil finds.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>13:30</custom_3>
+</item>
+<item>
+<uid>152824140006370</uid>
+<name>Evolution Workshop</name>
+<dtstart>Jun 06, 2018 10:30</dtstart>
+<dtend>Jun 06, 2018 11:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-evolution-workshop.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/evolution-horse-skeleton-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>
+Information desk at the entrance to Human Evolution
+</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Compare fossils and explore how life has changed over time.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>10:30</custom_3>
+</item>
+<item>
+<uid>152824140006371</uid>
+<name>Evolution Workshop</name>
+<dtstart>Jun 06, 2018 11:30</dtstart>
+<dtend>Jun 06, 2018 12:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-evolution-workshop.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/evolution-horse-skeleton-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>
+Information desk at the entrance to Human Evolution
+</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Compare fossils and explore how life has changed over time.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>11:30</custom_3>
+</item>
+<item>
+<uid>152824140006372</uid>
+<name>Evolution Workshop</name>
+<dtstart>Jun 06, 2018 12:30</dtstart>
+<dtend>Jun 06, 2018 13:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-evolution-workshop.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/evolution-horse-skeleton-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>
+Information desk at the entrance to Human Evolution
+</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Compare fossils and explore how life has changed over time.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>12:30</custom_3>
+</item>
+<item>
+<uid>152824140006373</uid>
+<name>Evolution Workshop</name>
+<dtstart>Jun 06, 2018 13:30</dtstart>
+<dtend>Jun 06, 2018 14:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-evolution-workshop.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/evolution-horse-skeleton-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>
+Information desk at the entrance to Human Evolution
+</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Compare fossils and explore how life has changed over time.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>13:30</custom_3>
+</item>
+<item>
+<uid>152824140006380</uid>
+<name>Investigate</name>
+<dtstart>Jun 06, 2018 10:30</dtstart>
+<dtend>Jun 06, 2018 11:20</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-investigate.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/investigate-centre-student-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Investigate Centre</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop, Self-led</category>
+</categories>
+<description>
+<![CDATA[
+Students can examine hundreds of real natural history specimens in our hands-on science centre.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>Free</custom_2>
+<custom_3>10:30</custom_3>
+</item>
+<item>
+<uid>152824140006381</uid>
+<name>Investigate</name>
+<dtstart>Jun 06, 2018 11:30</dtstart>
+<dtend>Jun 06, 2018 12:20</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-investigate.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/investigate-centre-student-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Investigate Centre</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop, Self-led</category>
+</categories>
+<description>
+<![CDATA[
+Students can examine hundreds of real natural history specimens in our hands-on science centre.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>Free</custom_2>
+<custom_3>11:30</custom_3>
+</item>
+<item>
+<uid>152824140006382</uid>
+<name>Investigate</name>
+<dtstart>Jun 06, 2018 12:30</dtstart>
+<dtend>Jun 06, 2018 13:20</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-investigate.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/investigate-centre-student-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Investigate Centre</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop, Self-led</category>
+</categories>
+<description>
+<![CDATA[
+Students can examine hundreds of real natural history specimens in our hands-on science centre.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>Free</custom_2>
+<custom_3>12:30</custom_3>
+</item>
+<item>
+<uid>152824140006383</uid>
+<name>Investigate</name>
+<dtstart>Jun 06, 2018 13:30</dtstart>
+<dtend>Jun 06, 2018 14:20</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-investigate.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/investigate-centre-student-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Investigate Centre</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop, Self-led</category>
+</categories>
+<description>
+<![CDATA[
+Students can examine hundreds of real natural history specimens in our hands-on science centre.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>Free</custom_2>
+<custom_3>13:30</custom_3>
+</item>
+<item>
+<uid>152824140006390</uid>
+<name>Dino Scientists</name>
+<dtstart>Jun 06, 2018 10:30</dtstart>
+<dtend>Jun 06, 2018 11:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-dino-scientist.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/dino-scientist-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>School Reception</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Self-led</category>
+</categories>
+<description>
+<![CDATA[
+Become a dinosaur scientist for the day to work out the diet, movements and habitats of ancient animals.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£1 per student</custom_2>
+<custom_3>10:30</custom_3>
+</item>
+<item>
+<uid>152824140006391</uid>
+<name>Dino Scientists</name>
+<dtstart>Jun 06, 2018 11:30</dtstart>
+<dtend>Jun 06, 2018 12:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-dino-scientist.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/dino-scientist-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>School Reception</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Self-led</category>
+</categories>
+<description>
+<![CDATA[
+Become a dinosaur scientist for the day to work out the diet, movements and habitats of ancient animals.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£1 per student</custom_2>
+<custom_3>11:30</custom_3>
+</item>
+<item>
+<uid>152824140006392</uid>
+<name>Dino Scientists</name>
+<dtstart>Jun 06, 2018 12:30</dtstart>
+<dtend>Jun 06, 2018 13:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-dino-scientist.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/dino-scientist-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>School Reception</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Self-led</category>
+</categories>
+<description>
+<![CDATA[
+Become a dinosaur scientist for the day to work out the diet, movements and habitats of ancient animals.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£1 per student</custom_2>
+<custom_3>12:30</custom_3>
+</item>
+<item>
+<uid>1528241400063100</uid>
+<name>Cutting Edge</name>
+<dtstart>Jun 06, 2018 10:30</dtstart>
+<dtend>Jun 06, 2018 11:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-cutting-edge.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/cutting-edge-science-educator-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>
+Zoology Spirit Building in the Darwin Centre, Orange Zone
+</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Investigate how teeth are related to diet in this interactive workshop.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>10:30</custom_3>
+</item>
+<item>
+<uid>1528241400063101</uid>
+<name>Cutting Edge</name>
+<dtstart>Jun 06, 2018 11:30</dtstart>
+<dtend>Jun 06, 2018 12:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-cutting-edge.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/cutting-edge-science-educator-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>
+Zoology Spirit Building in the Darwin Centre, Orange Zone
+</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Investigate how teeth are related to diet in this interactive workshop.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>11:30</custom_3>
+</item>
+<item>
+<uid>1528241400063102</uid>
+<name>Cutting Edge</name>
+<dtstart>Jun 06, 2018 12:30</dtstart>
+<dtend>Jun 06, 2018 13:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-cutting-edge.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/cutting-edge-science-educator-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>
+Zoology Spirit Building in the Darwin Centre, Orange Zone
+</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Investigate how teeth are related to diet in this interactive workshop.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>12:30</custom_3>
+</item>
+<item>
+<uid>1528241400063103</uid>
+<name>Cutting Edge</name>
+<dtstart>Jun 06, 2018 13:30</dtstart>
+<dtend>Jun 06, 2018 14:15</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-cutting-edge.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/cutting-edge-science-educator-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>
+Zoology Spirit Building in the Darwin Centre, Orange Zone
+</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Investigate how teeth are related to diet in this interactive workshop.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>13:30</custom_3>
+</item>
+<item>
+<uid>1528241400063110</uid>
+<name>Minibeast Pond Survey</name>
+<dtstart>Jun 06, 2018 10:30</dtstart>
+<dtend>Jun 06, 2018 11:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-minibeast-pond-survey.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/minibeast-pond-survey-group-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Darwin Centre atrium</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Observe, identify and record the invertebrates living in the Museum's Wildlife Garden pond in this outdoor workshop.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>10:30</custom_3>
+</item>
+<item>
+<uid>1528241400063111</uid>
+<name>Minibeast Pond Survey</name>
+<dtstart>Jun 06, 2018 11:30</dtstart>
+<dtend>Jun 06, 2018 12:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-minibeast-pond-survey.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/minibeast-pond-survey-group-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Darwin Centre atrium</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Observe, identify and record the invertebrates living in the Museum's Wildlife Garden pond in this outdoor workshop.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>11:30</custom_3>
+</item>
+<item>
+<uid>1528241400063112</uid>
+<name>Minibeast Pond Survey</name>
+<dtstart>Jun 06, 2018 12:30</dtstart>
+<dtend>Jun 06, 2018 13:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-minibeast-pond-survey.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/minibeast-pond-survey-group-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Darwin Centre atrium</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Observe, identify and record the invertebrates living in the Museum's Wildlife Garden pond in this outdoor workshop.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>12:30</custom_3>
+</item>
+<item>
+<uid>1528241400063113</uid>
+<name>Minibeast Pond Survey</name>
+<dtstart>Jun 06, 2018 13:30</dtstart>
+<dtend>Jun 06, 2018 14:00</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-minibeast-pond-survey.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/minibeast-pond-survey-group-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Darwin Centre atrium</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Workshop</category>
+</categories>
+<description>
+<![CDATA[
+Observe, identify and record the invertebrates living in the Museum's Wildlife Garden pond in this outdoor workshop.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£3 per student</custom_2>
+<custom_3>13:30</custom_3>
+</item>
+<item>
+<uid>1528241400063120</uid>
+<name>The Art of British Natural History</name>
+<dtstart>Jun 06, 2018</dtstart>
+<dtend>Jun 06, 2018</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/art-of-british-natural-history.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/visit/magpie-illustration-keulemans-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Images of Nature</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Drop-in, Exhibition</category>
+</categories>
+<description>
+<![CDATA[
+Explore the diverse wildlife of the British Isles and admire artworks of some of our most iconic species.
+]]>
+</description>
+<calendar_type>Visitor</calendar_type>
+<custom_1>Adults, Families</custom_1>
+<custom_2>Free</custom_2>
+<custom_3>All day</custom_3>
+</item>
+<allday>true</allday>
+<item>
+<uid>1528241400064130</uid>
+<name>Mary Anning</name>
+<dtstart>Jun 06, 2018 10:30</dtstart>
+<dtend>Jun 06, 2018 11:10</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-mary-anning-gallery.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/mary-anning-character-calander.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Hintze Hall by the bottom of the stairs</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Gallery character</category>
+</categories>
+<description>
+<![CDATA[
+Meet famous Victorian fossil hunter Mary Anning and learn about fossilisation and adaption.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£1 per student</custom_2>
+<custom_3>10:30</custom_3>
+</item>
+<item>
+<uid>1528241400064131</uid>
+<name>Mary Anning</name>
+<dtstart>Jun 06, 2018 11:30</dtstart>
+<dtend>Jun 06, 2018 12:10</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-mary-anning-gallery.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/mary-anning-character-calander.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Hintze Hall by the bottom of the stairs</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Gallery character</category>
+</categories>
+<description>
+<![CDATA[
+Meet famous Victorian fossil hunter Mary Anning and learn about fossilisation and adaption.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£1 per student</custom_2>
+<custom_3>11:30</custom_3>
+</item>
+<item>
+<uid>1528241400064132</uid>
+<name>Mary Anning</name>
+<dtstart>Jun 06, 2018 12:30</dtstart>
+<dtend>Jun 06, 2018 13:10</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-mary-anning-gallery.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/mary-anning-character-calander.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Hintze Hall by the bottom of the stairs</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Gallery character</category>
+</categories>
+<description>
+<![CDATA[
+Meet famous Victorian fossil hunter Mary Anning and learn about fossilisation and adaption.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£1 per student</custom_2>
+<custom_3>12:30</custom_3>
+</item>
+<item>
+<uid>1528241400064133</uid>
+<name>Mary Anning</name>
+<dtstart>Jun 06, 2018 13:30</dtstart>
+<dtend>Jun 06, 2018 14:10</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/events/schools-mary-anning-gallery.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/home/events-calendar/schools/mary-anning-character-calander.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>Hintze Hall by the bottom of the stairs</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Gallery character</category>
+</categories>
+<description>
+<![CDATA[
+Meet famous Victorian fossil hunter Mary Anning and learn about fossilisation and adaption.
+]]>
+</description>
+<calendar_type>School</calendar_type>
+<custom_1/>
+<custom_2>£1 per student</custom_2>
+<custom_3>13:30</custom_3>
+</item>
+<item>
+<uid>1528241400064140</uid>
+<name>Sensational Butterflies</name>
+<dtstart>Jun 06, 2018</dtstart>
+<dtend>Jun 06, 2018</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/visit/exhibitions/sensational-butterflies.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/visit/Exhibitions/sensational-butterflies/sensational-butterflies-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>East Lawn</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Exhibition</category>
+</categories>
+<description>
+<![CDATA[
+See hundreds of live butterflies and moths in our tropical butterfly house.
+]]>
+</description>
+<calendar_type>Visitor</calendar_type>
+<custom_1>Families, Adults, Kids</custom_1>
+<custom_2>£5.85 - £19.80</custom_2>
+<custom_3>All day</custom_3>
+</item>
+<allday>true</allday>
+<item>
+<uid>1528241400064150</uid>
+<name>Wildlife Photographer of the Year 53</name>
+<dtstart>Jun 06, 2018</dtstart>
+<dtend>Jun 06, 2018</dtend>
+<url>
+http://www.nhm.ac.uk/content/nhmwww/en/home/visit/exhibitions/wildlife-photographer-of-the-year-53.html
+</url>
+<image_url>
+http://www.nhm.ac.uk/content/dam/nhmwww/visit/Exhibitions/WPY53/wpy53-calendar.jpg
+</image_url>
+<placemarks>
+<placemark>
+<name>East Pavilion Gallery</name>
+</placemark>
+</placemarks>
+<categories>
+<category>Exhibition</category>
+</categories>
+<description>
+<![CDATA[
+Explore the world's best nature photography, highlighting the incredible range of life on Earth.
+]]>
+</description>
+<calendar_type>Visitor</calendar_type>
+<custom_1>General public</custom_1>
+<custom_2>£7 - £38</custom_2>
+<custom_3>All day</custom_3>
+</item>
+<allday>true</allday>
+</items>
+</feed>
