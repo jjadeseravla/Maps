@@ -129,17 +129,45 @@ var allStates = $("svg.us > *");
         xhr.send();
       }
 
+      // function pointOnMap() {
+      //   for ( var i = 0; i < itemArray.length; i++) {
+      //     console.log($($($($xml.find( "item" )[i]).find("placemarks")[0]).find("placemark")[0]).find("name")[0].innerHTML);
+      //     console.log($($($($xml.find( "item" )[i]).find("placemarks")[0]).find("placemark")[0]).find("name")[0].innerHTML == "Tring Park");
+      //     console.log($($($($xml.find( "item" )[i]).find("placemarks")[0]).find("placemark")[0]).find("name")[0].innerHTML === "Tring Park");
+      //
+      //     if ($($($($xml.find( "item" )[i]).find("placemarks")[0]).find("placemark")[0]).find("name")[0].innerHTML == "Tring Park") {
+      //       console.log('here');
+      //       document.getElementById('whereOnMap').onclick = tringZone();
+      //     } else {
+      //       console.log('there');
+      //       document.getElementById('whereOnMap').innerHTML = alert("no this is not Tring");
+      //     }
+      //   }
+      // }
+
 
 function pointOnMap() {
+  var counter = 0;
   for ( var i = 0; i < itemArray.length; i++) {
-    if ($($($($xml.find( "item" )[i]).find("placemarks")[0]).find("placemark")[0]).find("name")[0].innerHTML == "Tring Park" ){
-      document.getElementById('whereOnMap').innerHTML = alert("yes this is Tring");
-      //alert(2);
+    //if ($($($($xml.find( "item" )[i]).find("placemarks")[0]).find("placemark")[0]).find("name")[0].innerHTML == ($($($($xml.find( "item" )[0]).find("placemarks")[0]).find("placemark")[0]).find("name")[0]){
+    if ($($($($xml.find( "item" )[i]).find("placemarks")[0]).find("placemark")[0]).find("name")[0].innerHTML === "Throughout the Museum") {
+      console.log($($($($xml.find( "item" )[i]).find("placemarks")[0]).find("placemark")[0]).find("name")[0].innerHTML);
+      document.getElementById('whereOnMap').onclick = tringZone();
     } else {
-      document.getElementById('whereOnMap').innerHTML = alert("no this is not Tring");
+      document.getElementById('whereOnMap').onclick = alert(counter);
+      counter++;
     }
   }
 }
+
+// function tringZone() {
+//     var x = document.getElementById("tringCircle");
+//     if (x.style.display === "block") {
+//         x.style.display = "none";
+//     } else {
+//         x.style.display = "block";
+//     }
+// }
       // _e('btn').onclick = function() {
       //     _e('demo').innerHTML = 'Hey There';
       // }
