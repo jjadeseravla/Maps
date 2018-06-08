@@ -1,3 +1,5 @@
+//var location;
+
 function myFunction() {
     var x = document.getElementById("myDIV");
     if (x.style.display === "block") {
@@ -69,7 +71,6 @@ function clear() {
 }
 
 
-
 function loadText() {
   //create XHR object
   var xhr = new XMLHttpRequest();
@@ -103,66 +104,39 @@ function loadText() {
          newDiv.innerHTML += "<h4>Event Type: " + category + "</h4>";
          var button = document.createElement('button');
          var location = $($($($xml.find( "item" )[i]).find("placemarks")[0]).find("placemark")[0]).find("name")[0].innerHTML;
-         console.log(location);
+         //console.log(location);
+         //pointOnMap(location);
          button.setAttribute('class', 'button');
-         button.innerHTML = '<div id="whereOnMap" onclick="pointOnMap(location);">Find on Map</div>';
+         button.setAttribute('id', 'whereOnMap');
+         //button.onclick = pointOnMap(location);
+         //this line allows location to be used in pointOnMap function but then nothing else works
+         button.innerHTML = '<div id="whereOnMap" onclick="pointOnMap(location);">Find on Map</div>'
          toAdd.appendChild(newDiv);
          toAdd.appendChild(button);
        }
        eventContainer.appendChild(toAdd);
-       // var image = $($xml.find( "item" )[10]).find("image_url")[0].innerHTML;
-       // document.getElementById("demo").innerHTML = "<img src=" + image + " />";
-       // var name = $($xml.find( "item" )[10]).find("name")[0].innerHTML;
-       // document.getElementById("nameTitle").innerHTML = name;
-
-      //console.log(firstItem = $xml.find( "item" )[0]); //-good
-      //console.log('url:' + firsItem.innerHTML);
-       //$($xml.find( "item" )[10]).find("name")[0].innerHTML; // - good   sensational butterflies
-
-      //var output = "";
-      // for(var i in items) {
-      //   output +=
-      //   '<div class="item">' +
-      //   'img src="'+items[i].url+'" width="70" height="70">'}
-      //document.getElementById('text').innerHTML = this.responseText;
-      //document.getElementById('items').innerHTML = output;
     }
-    console.log(location + " here");
+    //console.log(location + " here");
   }
   xhr.send();
 }
 
 function pointOnMap(location) {
-  var counter = 0;
-    if (location != "East Pavillion Gallery") {
+  //var counter = 0;
+  console.log(location);
+    if (location != "Tring Park") {
+      console.log(location);
       document.getElementById('whereOnMap').onclick = tringZone();
     } else {
       //console.log($($($($xml.find( "item" )[0]).find("placemarks")[0]).find("placemark")[0]).find("name")[0].innerHTML);
-      document.getElementById('whereOnMap').onclick = tringZone();
+      document.getElementById('whereOnMap').onclick = alert(1);
       //alert(counter);
       //counter++;
     }
 }
-  // function validateUserInput() {
-  //   var popup;
-  //   var zone = document.getElementById("myInput").value;
-  //
-  //   switch(zone) {
-  //       case "darwin centre".toLowerCase():
-  //       popup = myFunction();
-  //       break;
-  //       case "earth hall":
-  //       popup = redZone();
-  //       break;
-  //       case "tring".toLowerCase():
-  //       popup = tringZone();
-  //       break;
-  //       default:
-  //      popup = document.getElementById("searchWord").innerHTML = "<h3>Apologies, your input is not recognised, please try again</h3>";
-  //      clear();
-  //   }
-  //   document.getElementById("searchWord").style.display = popup;
-  // }
+//How to get javascript variable (location) declared in loadText() to be used in pointOnMap(location) function.
+///line 111 does it but then stops everything within that function loading
+// at the moment nothing matches string and therefore tringZone() is being called constantly in whichever button.
 
 
 
